@@ -1,0 +1,112 @@
+body {
+    background-color: mistyrose;
+    color: rgb(34, 82, 73);
+}
+
+img {
+    text-align: center;
+    width: 35%;
+    margin: 10px auto 10px auto;
+    display: block;
+    border-radius: 2px;
+}
+
+.board {
+    color: rgb(34, 82, 73);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    letter-spacing: 12px;
+}
+
+/* box-shadow: https://getcssscan.com/css-box-shadow-examples */
+td {
+    border: 2px rgb(34, 82, 73) solid;
+    border-radius: 5px;
+    padding: 5px 0 5px 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+td:hover{
+    cursor: pointer;
+    background-color: rgb(225, 113, 15);
+}
+
+#game_container {
+    border:rgb(34, 82, 73) 5px solid;
+    display: table;
+    border-collapse: separate;
+    box-sizing:content-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    border-radius: 5px;
+}
+
+.add-word {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.word {
+    background-color: rgb(34, 82, 73);
+    color: mistyrose;
+    border-radius: 2px;
+    padding-left: 3px;
+}
+
+li{
+    margin-left: -40px;
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(34, 82, 73);
+    color: mistyrose;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+
+#stats_container {
+    border: 5px solid rgb(34, 82, 73);
+    margin: 10px auto 10px auto;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+a {
+    background-color: rgb(34, 82, 73);
+    color: mistyrose;
+    border-radius: 2px;
+    padding: 2px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    margin: auto;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(119, 72, 87);
+}
+
+/* footer {
+    position: absolute;
+    bottom: -10;   
+    z-index: -10;
+    margin-top: 20px;
+} */
+
+.err {
+    color: tomato;
+}

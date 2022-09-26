@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/app.css">
+    <title>{% block title %}  {% endblock %}</title>
+</head>
+
+<body>
+
+    <nav id='logo_image'><img src="https://process.filestackapi.com/cache=expiry:max/resize=width:1050/GliZS1I9QHKlu0FPNocW" alt="logo_image"/></nav>
+
+
+    {% block content %} {% endblock %}
+    
+    <a href="/">Restart</a>
+
+</body>
+
+<script src="http://unpkg.com/jquery"></script>
+<script src="https://unpkg.com/axios@0.19.0/dist/axios.js"></script>
+<script src="/static/js/app.js"></script>
+
+    <script>
+      let game = new BoggleGame("boggle", 60);
+    </script>
+
+</html>

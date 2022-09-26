@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %} Boggle Game {% endblock %}
+
+{% block content %}
+
+
+<section id="boggle">
+
+    <div id="game_container">
+        <table class="board">
+        <tbody>
+            {% for row in board %}
+            <tr>
+            {% for cell in row %}
+            <td>{{ cell }}</td>
+            {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+    </div>
+
+    <form id='submit_form' method="POST" class="add-word">
+        <input type='text' id='input' name="word" class="word" autofocus placeholder="Enter word">
+        <button id="btn">Enter word</button>
+    </form>
+
+    <div id="stats_container">
+        <p>High Score: <b>{{ highscore }}</b> 
+        <br>
+        Attempts: <b>{{ nplays }}</b>
+        <br>
+        Current score: <b class="score">0</b>
+        <br>
+        Seconds Left: <b class="timer"></b>
+        </p>
+
+    <p class="msg"></p>
+
+    <ul class="words"></ul>
+
+    </div>
+
+  </section>
+
+{% endblock %}
+
